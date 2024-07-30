@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_order.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #F3FEE9;">
+            <div class="image me-3">
+                <a href="index.html"><img src="images/icons5-home.png" width="30" alt=""> </a>
+            </div>
+            <div class="image me-3">
+                <a href="order_details.html"><img src="images/order-details.png" width="30" alt=""> </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
+                    <li class="nav-item" style="background-color: #4E9516;">
+                        <a class="nav-link active" style="color: #FFFEFE; font-weight: bold; font-size: small"
+                            aria-current="page" href="#">Menu (47)</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <form class="d-flex ms-5" role="search">
+                            <input class="form-control me-3" type="search"
+                                placeholder="Item Name, Item Code or Category" aria-label="Search"
+                                style="margin-left: 304px; font-size: medium; width: 300px; background-color: #4E9516">
+                            <button class="btn btn-outline-success" type="submit"
+                                style="background-color: #4E9516; color: black; font-weight: bold; font-size: small;">Search</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="full-width-row"
+        style="width: 100vw; background-color: #F3FEE9; display: flex; justify-content: flex-end;  padding-right: 20px;">
+        <div class="content"
+            style="background-color: #C1FC92; max-width: 25%; display: flex; flex-direction: column; align-items: flex-end; padding: 20px; position: relative; z-index: 1; top: -40px;">
+            <ul class="nav flex-column align-items-end">
+                <li class="nav-item">
+                    <a class="nav-link green-text" style="color: #274B0B; font-weight: bold; margin-right: 207px;"
+                        aria-current="page" href="#">Order Details</a>
+                </li>
+                <li class="nav-item">
+                    <div class="order-id-container"
+                        style="position: relative; display: inline-block; margin-left: 16px; margin-right: 157px;">
+                        <a class="nav-link order-id" style="color: #274B0B; font-weight: bold;" href="#">Order ID:
+                            #1005</a>
+                        <span class="date" style="margin-left: 16px; color: #274B0B; font-weight: bold;">Date: 15 July
+                            2024</span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="d-flex" style="justify-content: flex-end; margin-right: 47px; margin-top: 17px;">
+                        <a class="nav-link green-text" style="background-color: #60A02D; color: #FFFEFE;" href="#">Dine
+                            in</a>
+                        <a class="nav-link green-text mx-2" style="background-color: #60A02D; color: #FFFEFE;"
+                            href="#">Delivery</a>
+                        <a class="nav-link green-text" style="background-color: #60A02D; color: #FFFEFE;" href="#">Take
+                            Away</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <form class="d-flex flex-column align-items-end" style="margin-top: 21px;">
+                        <div class="form-group">
+                            <label class="disabled-form">Phone Number</label>
+                            <input type="text" class="form-control"
+                                style="display: inline-block; width: auto; margin-right: 10px;"
+                                placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group">
+                            <label class="disabled-form" style="margin-right: 19px;">Customer ID</label>
+                            <input type="text" class="form-control"
+                                style="display: inline-block; width: auto; margin-right: 10px;"
+                                placeholder="Enter customer ID">
+                        </div>
+                        <div class="form-group">
+                            <label class="disabled-form" style="margin-right: 24px;">Cust. Name</label>
+                            <input type="text" class="form-control"
+                                style="display: inline-block; width: auto; margin-right: 10px;"
+                                placeholder="Enter customer name">
+                        </div>
+                    </form>
+                </li>
+
+                <div class="card" style="width: 18rem; background-color: #DAFDBE; top: 29px; left: -45px;">
+                    <ul class="list-group list-group-flush" style="color: #37680F; font-weight: lighter;">
+                        <li class="list-group-item">
+                            <span class="item1" style="flex: 1; text-align: left;">Item 1</span>
+                            <span class="price1" style="flex: 1; text-align: center;">Price 1</span>
+                            <span class="qty1" style="flex: 1; text-align: right;">Qty 1</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="item2" style="flex: 1; text-align: left;">Item 2</span>
+                            <span class="price2" style="flex: 1; text-align: center;">Price 2</span>
+                            <span class="qty2" style="flex: 1; text-align: right;">Qty 2</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="item3" style="flex: 1; text-align: left;"></span>
+                            <span class="price3" style="flex: 1; text-align: center;"></span>
+                            <span class="qty3" style="flex: 1; text-align: right;"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="item4" style="flex: 1; text-align: left;"></span>
+                            <span class="price4" style="flex: 1; text-align: center;"></span>
+                            <span class="qty4" style="flex: 1; text-align: right;"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="item5" style="flex: 1; text-align: left;"></span>
+                            <span class="price5" style="flex: 1; text-align: center;"></span>
+                            <span class="qty5" style="flex: 1; text-align: right;"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="item6" style="flex: 1; text-align: left;"></span>
+                            <span class="price6" style="flex: 1; text-align: center;"></span>
+                            <span class="qty6" style="flex: 1; text-align: right;"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="item7" style="flex: 1; text-align: left;"></span>
+                            <span class="price7" style="flex: 1; text-align: center;"></span>
+                            <span class="qty7" style="flex: 1; text-align: right;"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="item8" style="flex: 1; text-align: left;"></span>
+                            <span class="price8" style="flex: 1; text-align: center;"></span>
+                            <span class="qty8" style="flex: 1; text-align: right;"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="item9" style="flex: 1; text-align: left;"></span>
+                            <span class="price9" style="flex: 1; text-align: center;"></span>
+                            <span class="qty9" style="flex: 1; text-align: right;"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="item10" style="flex: 1; text-align: left;"></span>
+                            <span class="price10" style="flex: 1; text-align: center;"></span>
+                            <span class="qty10" style="flex: 1; text-align: right;"></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <li class="nav-item" style="margin-top: 36px; margin-right: 226px; color: #274B0B">
+                    <div class="values" style="display: flex; flex-direction: column; margin: 5px;">
+                        <a class="total-item" style="text-decoration: none; color: #274B0B" href="">Total Item</a>
+                        <span class="sub-total">Sub Total</span>
+                        <span class="discount">Discount</span>
+                        <span class="net-total">Net Total</span>
+                        <span class="tax">Tax (18%)</span>
+                        <span class="total-amount">Total Amount</span>
+                    </div>
+                </li>
+                <li class="nav-item mt-3" style="text-align: center;">
+                    <div class="buttons" style="background-color: #C1FC92; display: flex; gap: 10px;">
+                        <button class="btn btn-delete" style="background-color: #60A02D; color: #FFFEFE;"
+                            type="button">Delete</button>
+                        <button class="btn btn-accept" style="background-color: #60A02D; color: #FFFEFE;"
+                            type="button">Accept</button>
+                    </div>
+                </li>
+        </div>
+        </ul>
+        <div class="vertical-bar" style="border-left: 2px solid green; margin-top: 20px;">
+        </div>
+    </div>
+    </div>
+
+
+    <ul class="nav nav-pills"
+        style="margin-top: -775px; margin-left: 25px; margin-right: 417px; text-align: center; background-color: #F3FEE9; border: 2px solid #C1FC92; border-radius: 5px; padding: 10px;">
+        <li class="nav-item" style="width: 100px;">
+            <a class="nav-link active" style="background-color: #4E9516;" aria-current="page" href="#">All</a>
+        </li>
+        <li class="nav-item" style="width: 170px;">
+            <a class="nav-link" href="#">Main_Course</a>
+        </li>
+        <li class="nav-item" style="width: 140px;">
+            <a class="nav-link" href="#">Burgers</a>
+        </li>
+        <li class="nav-item" style="width: 140px;">
+            <a class="nav-link" href="#">Submarines</a>
+        </li>
+        <li class="nav-item" style="width: 100px;">
+            <a class="nav-link" href="#">Fries</a>
+        </li>
+        <li class="nav-item" style="width: 100px;">
+            <a class="nav-link" href="#">Pasta</a>
+        </li>
+        <li class="nav-item" style="width: 140px;">
+            <a class="nav-link" href="#">Chicken</a>
+        </li>
+        <li class="nav-item" style="width: 140px;">
+            <a class="nav-link" href="#">Beverages</a>
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-4" style="margin-left: 37px; margin-bottom: 0px;">
+            <div class="card"
+                style="margin: 10px; width: 20rem; margin-right: 9px; margin-left: 39px; margin-top: 10px;">
+                <img src="images/Grinder Submarine.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">Grinder Submarine</h6>
+                    <h6 class="card-text">Rs.2,300</h6>
+                    <a href="#" class="btn btn">Add Item</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" style="margin-left: -151px; margin-right: -180px;">
+            <div class="card" style="width: 20rem; margin: 10px;">
+                <img src="images/French Fries.jpg" class="card-img-top" alt="...">
+                <div class="card-body" style="align-items: center;">
+                    <h6 class="card-title">French Fries(Small)</h6>
+                    <h6 class="card-text">Rs.450</h6>
+                    <a href="#" class="btn btn"> <img src="images/icons11-checkmark.png"
+                            style="margin-right: 150px; width: 25px;"> <img src="images/icons12-add.png"
+                            style="width: 20px; height: 16px; margin: 0 5px;" alt="">5 <img
+                            src="images/icons13-macos-minimize.png" style="width: 16px; height: 20px; margin: 0 5px;"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 20rem; margin: 10px;">
+                <img src="images/Tagliatelle Pasta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">Tagligatelle Pasta</h6>
+                    <h6 class="card-text" style="display: flex; justify-content: space-between;">
+                        <span>Rs.2,400</span><span style="color: red;">1%</span>
+                    </h6>
+                    <a href="#" class="btn btn">Add Item</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4" style="margin-left: 37px; margin-bottom: 0px;">
+            <div class="card"
+                style="margin: 10px; width: 20rem; margin-right: 9px; margin-left: 39px; margin-top: 10px;">
+                <img src="images/BBQ Chicken.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">BBQ Chicken(Regular)</h6>
+                    <h6 class="card-text">Rs.2,100</h6>
+                    <a href="#" class="btn btn">Add Item</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" style="margin-left: -151px; margin-right: -180px;">
+            <div class="card" style="width: 20rem; margin: 10px;">
+                <img src="images/Chicken Penne Pasta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">Creamy Shrimp Passts</h6>
+                    <h6 class="card-text">Rs.2,000</h6>
+                    <a href="#" class="btn btn">Add Item</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 20rem; margin: 10px;">
+                <img src="images/Becon Berger.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">Bacon Burger</h6>
+                    <h6 class="card-text" style="display: flex; justify-content: space-between;">
+                        <span>Rs.650</span><span style="color: red;">15%</span>
+                    </h6>
+                    <a href="#" class="btn btn">Add Item</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+   
+</body>
+
+</html>

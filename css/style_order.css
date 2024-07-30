@@ -1,0 +1,31 @@
+.list-group-item{
+    background-color: #DAFDBE; 
+    display: flex; 
+    align-items: center;
+}
+
+.disabled-form{
+    color: #274B0B;
+}
+
+.nav-link{
+    color: #274B0B;
+}
+
+.card-img-top{
+    width: 320px; 
+    height: 212px;
+}
+
+.btn, btn{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-left: 10px; 
+    background-color: #F3FEE9; 
+    border: 2px solid #4E9516; 
+    border-radius: 5px; 
+    padding: 1px; 
+    color: #4E9516; 
+    font-weight: bold;
+}
